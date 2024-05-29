@@ -22,20 +22,20 @@ const Accordian = () => {
     }
 
     return (
-        <div className='wrapper'>
+        <div className="flex flex-col justify-center items-center border-8">
             <button onClick={() => setEnableMulti(!enableMulti)}>Enable Multi Selection</button>
-            <div className='accordian'>
+            <div className='border-black border-4'>
                 {
                     data && data.length > 0 ? 
                     data.map((dataItem) => (
-                        <div className="item" key={dataItem.id}>
+                        <div key={dataItem.id}>
                             <div 
                                 onClick={enableMulti ? 
                                     () => handleMultiSelection(dataItem.id) 
                                     : 
                                     () => handleSingleSelection(dataItem.id)
                                 } 
-                                className="title"
+                                className="flex flex-col justify-center items-center border-4"
                             >
                                 <h3>{dataItem.question}</h3>
                                 <span>+</span>

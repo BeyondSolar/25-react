@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import Accordian from './components/accordian/Accordian'
-import Test from './components/test/Test'
+import Randomcolor from './components/random-color/Randomcolor';
 
 function App() {
   return (
-    <div className="App">
+    <div className='flex flex-col justify-center items-center'>
       {/* <Test /> */}
-      <Accordian />
+      {/* <Accordian /> */}
+      <Randomcolor/>
     </div>
   );
 }
